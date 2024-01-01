@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lucky Grader</title>
+    <script>
+        function previewFile() {
+            const preview = document.getElementById('image-preview');
+            const file = document.querySelector('input[type=file]').files[0];
+            const reader = new FileReader();
+
+            reader.onloadend = function() {
+                preview.src = reader.result;
+                preview.style.display = 'block';
+            }
+
+            if (file) {
+                reader.readAsDataURL(file);
+            } else {
+                preview.src = "";
+                preview.style.display = 'none';
+            }
+        }
+
+         function previewURL(input) {
+            const preview = document.getElementById('image-preview');
+            const url = input.value;
+
+            if (url) {
+                preview.src = url;
+                preview.style.display = 'block';
+            } else {
+                preview.src = "";
+                preview.style.display = 'none';
+            }
+        }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/style.css">
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap">    
+</head>
+<body>
+
+
+<div class="topnav" id="myTopnav">
+  <a href="{{ url_for('home') }}" class="home-button">Home</a>
+  <a href="/" class="home-button">To The Grader</a>
+  <a href="{{ url_for('contact') }}" class="home-button">Contact</a>
+  <div class="dropdown" 
+    <button class="dropbtn">Extras
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://luckys.cards">The Card Shop</a>
+      <a href="https://everythings4.sale">The Shopping Mall</a>
+      <a href="https://myshamrocks.com">Football Picks</a> <!-- Add URL here -->
+    </div>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div style="padding-left:16px">
+    <h2>Upload Your Card Image</h2>
+    <p>Crop your picture so it leaves only a slight border outside the card.</p>
+    <p>Make sure your picture is clear and well lit for best results.</p>
+	<h3>SEE HOME PAGE</h3>
+
+    <h4>It does still have issues with the disco, sparkle, shimmer type cards it reads the surface as imperfect 
+	and kills the grades.</h4><p style="color:red; font-weight:900"> (In progress actually found a way that once implemented the special info box will 
+	need to have a key word, ex. mosaic, sparkle, triangles, which will trigger the abilty to distingish those types of cards. IN THE WORKS NOW.)</p>
+
+    <p> I am working on a model specific for those cards next - now that the 1986 Fleer Model trained to 91% today testing next couple of days.</p> 
+
+
+</div>
+
+<div style="center-text">
+<form method="post" enctype="multipart/form-data">
+    <input type="file" name="file" onchange="previewFile()"><br>
+    <input type="text" name="image_url" placeholder="Or enter an image URL" oninput="previewURL(this)"><br>
+    <input type="text" name="card_number" placeholder="Card Number"><br>
+    <input type="text" name="card_maker" placeholder="Maker"><br>
+    <input type="text" name="card_player" placeholder="Player"><br>
+    <input type="text" name="card_year" placeholder="Year"><br>
+    <input type="text" name="card_type" placeholder="Type"><br>
+    <input type="text" name="spec_info" placeholder="Special Info"><br>  
+    <input type="submit" value="Upload">
+</form>
+</div>
+
+<div style=padding-right:60%">
+<img id="image-preview" src="" height="600" style="style="max-width:450;height:auto;">
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>

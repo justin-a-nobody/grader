@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lucky Grader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap"> 
+
+</head>
+<body>
+
+
+<div class="topnav" id="myTopnav">
+  <a href="{{ url_for('home') }}" class="home-button">Home</a>
+  <a href="/" class="home-button">To The Grader</a>
+  <a href="{{ url_for('contact') }}" class="home-button">Contact</a>
+  <div class="dropdown"
+    <button class="dropbtn">Extras
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://luckys.cards">The Card Shop</a>
+      <a href="https://everythings4.sale">The Shopping Mall</a>
+      <a href="https://myshamrocks.com">Football Picks</a> <!-- Add URL here -->
+    </div>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div style="text-align:center">
+    <h3>Please Before Reaching Out About the Grader Not Working Or Something Of That Nature </h3>
+
+    <h2>When You Upload Your Card Image</h2>
+<h6 style=="color:ffa500">the 4 bulleted items are on the upload page fpr your use</h6>
+    <ul style="list-style:none">
+    	<li>Crop your picture so it leaves only a slight border outside the card.</lli>
+        <li>Make sure your picture is clear and well lit for best results.</li>
+        <li>This is super important, blurry pics, the model sees a bad card </li> 
+        <li>Crooked pics the model can read it as trimmed or not the right shape</li>
+    <?ul>
+<br></br>
+<h1 style="color:#ffa500">Make sure to use a good clean pic of the card, with good color and lighting, without
+     altering or bluring the card for the best accurate grade. </h1><br>
+<h3> Because I Assure You It Works  and Works Well </h3>
+
+</div>
+
+<div style="text-align:center">
+    <h2>Model Stats</h2>
+		<ul style="list-style:none; text-align:center">
+			<li> Dataset = Dataset was over 300000 priofessionally graded cards </li>
+			<li> The model was trained on over 70 iterations of the 300000 card dataset</li>
+			<li> The model was trained to ann accuracy of 88.3% with a val-acc of 85.6%</li>
+			<li> The model ws trained to a loss of 26.4% and a val-loss of 29.3%</li> 
+		</ul>
+</div>
+
+<div style="text-align:center">
+	<h1 style="color:#ff0000"> Projects </h1>
+
+		<h5>Currently I am working on training a set specific model for 1986 fleer basketball cards. With the set having so many sought after cards in it. It seemed a logical choice it is trained and in test phase now. As with th ecurrent overall model which was trained on 300000 graded cards. it is being trained on 100000 graded cards to the rates described above.</h5>
+			<h3 style="color:#07a32c"> CHECK BACK TO SEE IT WORK </h3>
+
+<a href="/" class="home-button">To The Grader</a>
+
+</body>
+</html>
+

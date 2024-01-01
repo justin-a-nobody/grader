@@ -1,0 +1,237 @@
+* {box-sizing: border-box;}
+body {
+  font-family: 'Playfair Display';
+  font-size: 18px;
+  text-shadow: 4px 4px 4px #dbde9b;
+}
+
+h1	{
+    font-family: 'Playfair Display', cursive;
+    text-shadow: 4px 4px 4px #dbde9b;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family:  'Playfair Display';
+    text-shadow: 4px 4px 4px #dbde9b;
+}
+
+p	{
+    font-family:  'Playfair Display';
+    text-shadow: 4px 4px 4px #dbde9b;
+}
+
+h1	{
+    font-family: 'Playfair Display', cursive;
+    font-size: 2.75em;
+    text-shadow: 4px 4px 4px #dbde9b;
+}
+
+h2 {
+    font-family: 'Playfair Display', cursive;
+    font-size: 2.25em;
+    text-shadow: 4px 4px 4px #dbde9b;
+}
+
+h3 {
+    font-family:  'Playfair Display'; 
+    font-size: 2em; 
+    text-shadow: 4px 4px 4px #dbde9b;
+}
+
+h4 {
+    font-family: 'Playfair Display', cursive;
+    font-size: 1.8em;
+    text-shadow: 4px 4px 4px #dbde9b;
+}
+
+h5 {
+    font-family:  'Playfair Display' 
+    font-size: 1.5em;
+    text-shadow: 4px 4px 4px #dbde9b;
+}
+
+h6 {
+    font-family:  'Playfair Display";
+    font-size: 1.2em;
+    text-shadow: 4px 4px 4px #dbde9b;
+}
+
+p {
+    font-family: 'Playfair Display', cursive;
+    font-size: 1em; 
+    text-shadow: 4px 4px 4px #dbde9b;
+}
+
+ul, li {    
+    list-style: none:
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #07a32c;
+}
+
+.topnav a {
+  background-color: #07a32c;
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.active {
+  background-color: #ffffff;
+  color: #07a32c;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: right;  
+  overflow: hidden;
+  font-family: 'Playfair Display';
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 4px 4px 4px #dbde9b;
+    box-sizing: border-box;
+    float: right;
+    overflow: hidden;
+    margin-top: 30px;
+    width: 168px;
+    padding-top: 14px;
+    padding-right: 20px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.dropdown .dropbtn {
+  font-family: 'Playfair Display';
+    font-size: 30px;
+    color: #07a32c;
+    text-shadow: 4px 4px 4px #dbde9b;
+    box-sizing: border-box;
+    float: right;
+    overflow: hidden;
+    margin-top: 30px;
+    width: 168px;
+    padding-top: 14px;
+    padding-right: 16px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    margin-bottom: 30px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  background-color: #fff;
+  float: none;
+  color: #07A32C;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #dbde9b;
+  color: #07A32C;
+}
+
+.dropdown-content a:hover {
+  background-color: #dbde9b;
+  color: #07a32c;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+@media screen and (max-width: 750px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.grade-display {
+            font-size: 48px;
+            color: #07a32c;
+            text-align: center;
+            margin-top: 20px;
+            font-family: 'Playfair Display', cursive;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .home-button {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #07a32c;
+            color: white;
+            text-decoration: none;
+            font-size: 36px;
+            border-radius: 5px;
+        }
+
+        .home-button:hover {
+            background-color: #059024;
+        }
+        
+        .image-button {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #07a32c;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        .image-button:hover {
+            background-color: #059024;
+        }

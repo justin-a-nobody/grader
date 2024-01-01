@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lucky Grader</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css"
+  
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="{{ url_for('home') }}" class="home-button">Home</a>
+  <a href="/" class="home-button">To The Grader</a>
+  <a href="{{ url_for('contact') }}" class="home-button">Contact</a>
+  <div class="dropdown"
+    <button class="dropbtn">Extras
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://luckys.cards">The Card Shop</a>
+      <a href="https://everythings4.sale">The Shopping Mall</a>
+      <a href="https://myshamrocks.com">Football Picks</a> <!-- Add URL here -->
+    </div>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="grade-display">
+    <h1>Grade: {{ grade }}</h1>
+</div>
+
+<div class="image-container">
+    <img src="/{{ image_path }}" alt="Graded Image"/>
+</div>
+
+<a href="/" class="home-button">Return to Home</a> 
+<a href="/{{ image_path }}" class="image-button" target="_blank">See Card Image</a>
+
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+</body>
+</html>
+
+
