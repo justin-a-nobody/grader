@@ -8,6 +8,11 @@ python3.10 -m pip install pillow
 python3.10 -m pip install mysql.connector
 for your server conf here is a start
 
+
+
+
+
+
 server {
         listen 80;
         listen [::]:80;
@@ -123,3 +128,17 @@ You will need to train a model I used vgg models to train mine  and ra a 10 epoh
 If you would like to purchase the pretrained on a half of a million cards model I am open to offers on the model as well as the script I used to train said model.
 
 the final product is here 108.61.177.88
+
+here are some screen shots 
+
+start page ![Screenshot 2024-01-07 at 15-10-57 Lucky Grader](https://github.com/justin-a-nobody/grader/assets/155355958/6339497f-0958-4e65-8dc1-93b99e2530a7)
+
+
+Find a card to grade ![Screenshot 2024-01-07 at 15-11-56 1986 1987 FLEER BASKETBALL - YOU PICK #1 - #132 NMMT FREE SHIP eBay](https://github.com/justin-a-nobody/grader/assets/155355958/6d94c8f8-69d2-4ce7-874c-f27b32dc3ac1)
+
+get its url ![Screenshot 2024-01-07 at 15-12-13 s-l1600 png (PNG Image 868 × 1150 pixels) — Scaled (61%)](https://github.com/justin-a-nobody/grader/assets/155355958/f1868e6b-7932-4422-b58c-41be1e4ad63f)
+
+fill out the form then hit upload ![Screenshot 2024-01-07 at 15-13-10 Lucky Grader](https://github.com/justin-a-nobody/grader/assets/155355958/95e25e02-83de-48ce-83c2-efc31ec286d5)
+
+Get your grade ![Screenshot 2024-01-07 at 15-13-27 Lucky Grader](https://github.com/justin-a-nobody/grader/assets/155355958/9506036e-1a87-47a2-a71a-3f2974a56a34)
+
